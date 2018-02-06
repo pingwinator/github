@@ -6,29 +6,31 @@
 //  Copyright © 2018 pingwinator. All rights reserved.
 //
 
-import UIKit
 import GithubAPI
+import UIKit
 
 final class DetailViewController: UIViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel?
-    
+    @IBOutlet var emailButton: UIButton?
+
     var user: User? {
         didSet {
             // Update the view.
             configureView()
         }
     }
-    
-    deinit {
-        print("")
-    }
 
     func configureView() {
         // Update the user interface for the detail item.
         if let user = user {
-            if let label = detailDescriptionLabel {
-                label.text = user.email ?? "not avalible"
+            if let button = emailButton {
+                if let email = user.email {
+                    button.setTitle(email, for: .normal)
+                    button.isEnabled = true
+                } else {
+                    button.setTitle("User has private email", for: .normal)
+                    button.isEnabled = false
+                }
             }
         }
     }
@@ -39,16 +41,13 @@ final class DetailViewController: UIViewController {
         configureView()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    var detailItem: NSDate? {
-        didSet {
-            // Update the view.
-            configureView()
+    @IBAction func sendMail(_ sender: Any) {
+        if let email = self.user?.email {
+            let urlStr = "mailto:" + email
+            if let url = URL(string: urlStr),
+                UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
         }
     }
-
 }

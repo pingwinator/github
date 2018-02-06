@@ -234,7 +234,6 @@ final class MasterViewController: UITableViewController {
 
 extension MasterViewController: UITableViewDataSourcePrefetching {
     func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
-        print(indexPaths)
         let users = indexPaths.map { groupedItems[$0.section][$0.row]}
         userProvider.prefetchUser(users: users)
     }

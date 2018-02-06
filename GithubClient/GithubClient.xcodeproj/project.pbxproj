@@ -37,8 +37,14 @@
 		FD397682202A56C70045E462 /* UserOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD39766D202A56C70045E462 /* UserOverview.swift */; };
 		FD397683202A56C70045E462 /* SearchTerms.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD39766E202A56C70045E462 /* SearchTerms.swift */; };
 		FD397684202A56C70045E462 /* GitHubAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD39766F202A56C70045E462 /* GitHubAccount.swift */; };
+		FD536335202A5ADE002DC8C8 /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD536334202A5ADE002DC8C8 /* ConfigurableCell.swift */; };
+		FD536337202A5AF3002DC8C8 /* ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD536336202A5AF3002DC8C8 /* ReusableIdentifier.swift */; };
+		FD536339202A5B99002DC8C8 /* SortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD536338202A5B99002DC8C8 /* SortedArray.swift */; };
 		FD6D6944202A5928003A7958 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D6942202A5928003A7958 /* DetailViewController.swift */; };
 		FD6D6945202A5928003A7958 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D6943202A5928003A7958 /* MasterViewController.swift */; };
+		FD6D694C202A5A37003A7958 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D694A202A5A37003A7958 /* UserTableViewCell.swift */; };
+		FD6D694D202A5A37003A7958 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD6D694B202A5A37003A7958 /* UserTableViewCell.xib */; };
+		FD6D6950202A5A7B003A7958 /* GitHubAccount+Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D694F202A5A7B003A7958 /* GitHubAccount+Keychain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,8 +108,14 @@
 		FD39766D202A56C70045E462 /* UserOverview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserOverview.swift; sourceTree = "<group>"; };
 		FD39766E202A56C70045E462 /* SearchTerms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTerms.swift; sourceTree = "<group>"; };
 		FD39766F202A56C70045E462 /* GitHubAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAccount.swift; sourceTree = "<group>"; };
+		FD536334202A5ADE002DC8C8 /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
+		FD536336202A5AF3002DC8C8 /* ReusableIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableIdentifier.swift; sourceTree = "<group>"; };
+		FD536338202A5B99002DC8C8 /* SortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedArray.swift; sourceTree = "<group>"; };
 		FD6D6942202A5928003A7958 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FD6D6943202A5928003A7958 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		FD6D694A202A5A37003A7958 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		FD6D694B202A5A37003A7958 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		FD6D694F202A5A7B003A7958 /* GitHubAccount+Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GitHubAccount+Keychain.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,8 +186,9 @@
 				FD6D693F202A5928003A7958 /* Extensions */,
 				FD6D693E202A5928003A7958 /* Models */,
 				FD6D6941202A5928003A7958 /* ViewControllers */,
-				FD3975FE202914190045E462 /* AppDelegate.swift */,
+				FD6D694E202A5A50003A7958 /* Protocols */,
 				FD3976042029141A0045E462 /* Main.storyboard */,
+				FD3975FE202914190045E462 /* AppDelegate.swift */,
 				FD3976072029141A0045E462 /* Assets.xcassets */,
 				FD3976092029141A0045E462 /* LaunchScreen.storyboard */,
 				FD39760C2029141A0045E462 /* Info.plist */,
@@ -264,6 +277,7 @@
 		FD6D693E202A5928003A7958 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FD536338202A5B99002DC8C8 /* SortedArray.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -271,6 +285,7 @@
 		FD6D693F202A5928003A7958 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FD6D694F202A5A7B003A7958 /* GitHubAccount+Keychain.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -278,6 +293,8 @@
 		FD6D6940202A5928003A7958 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				FD6D694A202A5A37003A7958 /* UserTableViewCell.swift */,
+				FD6D694B202A5A37003A7958 /* UserTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -289,6 +306,15 @@
 				FD6D6943202A5928003A7958 /* MasterViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FD6D694E202A5A50003A7958 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FD536334202A5ADE002DC8C8 /* ConfigurableCell.swift */,
+				FD536336202A5AF3002DC8C8 /* ReusableIdentifier.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,6 +419,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6D694D202A5A37003A7958 /* UserTableViewCell.xib in Resources */,
 				FD39760B2029141A0045E462 /* LaunchScreen.storyboard in Resources */,
 				FD3976082029141A0045E462 /* Assets.xcassets in Resources */,
 				FD3976062029141A0045E462 /* Main.storyboard in Resources */,
@@ -528,6 +555,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD536337202A5AF3002DC8C8 /* ReusableIdentifier.swift in Sources */,
+				FD536335202A5ADE002DC8C8 /* ConfigurableCell.swift in Sources */,
+				FD6D6950202A5A7B003A7958 /* GitHubAccount+Keychain.swift in Sources */,
+				FD6D694C202A5A37003A7958 /* UserTableViewCell.swift in Sources */,
+				FD536339202A5B99002DC8C8 /* SortedArray.swift in Sources */,
 				FD3975FF202914190045E462 /* AppDelegate.swift in Sources */,
 				FD6D6944202A5928003A7958 /* DetailViewController.swift in Sources */,
 				FD6D6945202A5928003A7958 /* MasterViewController.swift in Sources */,

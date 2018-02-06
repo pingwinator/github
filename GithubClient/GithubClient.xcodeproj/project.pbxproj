@@ -18,6 +18,27 @@
 		FD39761B202914570045E462 /* GithubAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = FD397619202914570045E462 /* GithubAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD39761E202914570045E462 /* GithubAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD397617202914570045E462 /* GithubAPI.framework */; };
 		FD39761F202914570045E462 /* GithubAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD397617202914570045E462 /* GithubAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD397670202A56C70045E462 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD397656202A56C60045E462 /* APIError.swift */; };
+		FD397671202A56C70045E462 /* RechabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD397657202A56C60045E462 /* RechabilityManager.swift */; };
+		FD397672202A56C70045E462 /* SwiftyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD397658202A56C60045E462 /* SwiftyHelper.swift */; };
+		FD397673202A56C70045E462 /* CollectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD397659202A56C60045E462 /* CollectionResponse.swift */; };
+		FD397674202A56C70045E462 /* ModelResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD39765A202A56C60045E462 /* ModelResponseSerializer.swift */; };
+		FD397675202A56C70045E462 /* VLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD39765B202A56C60045E462 /* VLError.swift */; };
+		FD397676202A56C70045E462 /* UserAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD39765C202A56C60045E462 /* UserAdapter.swift */; };
+		FD397677202A56C70045E462 /* WebLinksHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD39765D202A56C60045E462 /* WebLinksHelper.swift */; };
+		FD397678202A56C70045E462 /* UserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD39765F202A56C70045E462 /* UserProvider.swift */; };
+		FD397679202A56C70045E462 /* SearchUsersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD397660202A56C70045E462 /* SearchUsersProvider.swift */; };
+		FD39767A202A56C70045E462 /* UIImageView+Github.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD397662202A56C70045E462 /* UIImageView+Github.swift */; };
+		FD39767B202A56C70045E462 /* BasicUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD397664202A56C70045E462 /* BasicUser.swift */; };
+		FD39767C202A56C70045E462 /* JSONDecodableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD397665202A56C70045E462 /* JSONDecodableModel.swift */; };
+		FD39767D202A56C70045E462 /* API+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD397667202A56C70045E462 /* API+User.swift */; };
+		FD39767E202A56C70045E462 /* API+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD397668202A56C70045E462 /* API+Search.swift */; };
+		FD39767F202A56C70045E462 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD397669202A56C70045E462 /* API.swift */; };
+		FD397680202A56C70045E462 /* GithubError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD39766B202A56C70045E462 /* GithubError.swift */; };
+		FD397681202A56C70045E462 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD39766C202A56C70045E462 /* User.swift */; };
+		FD397682202A56C70045E462 /* UserOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD39766D202A56C70045E462 /* UserOverview.swift */; };
+		FD397683202A56C70045E462 /* SearchTerms.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD39766E202A56C70045E462 /* SearchTerms.swift */; };
+		FD397684202A56C70045E462 /* GitHubAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD39766F202A56C70045E462 /* GitHubAccount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +83,27 @@
 		FD397617202914570045E462 /* GithubAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GithubAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD397619202914570045E462 /* GithubAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GithubAPI.h; sourceTree = "<group>"; };
 		FD39761A202914570045E462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD397656202A56C60045E462 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		FD397657202A56C60045E462 /* RechabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RechabilityManager.swift; sourceTree = "<group>"; };
+		FD397658202A56C60045E462 /* SwiftyHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyHelper.swift; sourceTree = "<group>"; };
+		FD397659202A56C60045E462 /* CollectionResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionResponse.swift; sourceTree = "<group>"; };
+		FD39765A202A56C60045E462 /* ModelResponseSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelResponseSerializer.swift; sourceTree = "<group>"; };
+		FD39765B202A56C60045E462 /* VLError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLError.swift; sourceTree = "<group>"; };
+		FD39765C202A56C60045E462 /* UserAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAdapter.swift; sourceTree = "<group>"; };
+		FD39765D202A56C60045E462 /* WebLinksHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebLinksHelper.swift; sourceTree = "<group>"; };
+		FD39765F202A56C70045E462 /* UserProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProvider.swift; sourceTree = "<group>"; };
+		FD397660202A56C70045E462 /* SearchUsersProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchUsersProvider.swift; sourceTree = "<group>"; };
+		FD397662202A56C70045E462 /* UIImageView+Github.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Github.swift"; sourceTree = "<group>"; };
+		FD397664202A56C70045E462 /* BasicUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicUser.swift; sourceTree = "<group>"; };
+		FD397665202A56C70045E462 /* JSONDecodableModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodableModel.swift; sourceTree = "<group>"; };
+		FD397667202A56C70045E462 /* API+User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "API+User.swift"; sourceTree = "<group>"; };
+		FD397668202A56C70045E462 /* API+Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "API+Search.swift"; sourceTree = "<group>"; };
+		FD397669202A56C70045E462 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		FD39766B202A56C70045E462 /* GithubError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubError.swift; sourceTree = "<group>"; };
+		FD39766C202A56C70045E462 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FD39766D202A56C70045E462 /* UserOverview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserOverview.swift; sourceTree = "<group>"; };
+		FD39766E202A56C70045E462 /* SearchTerms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTerms.swift; sourceTree = "<group>"; };
+		FD39766F202A56C70045E462 /* GitHubAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAccount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,10 +184,79 @@
 		FD397618202914570045E462 /* GithubAPI */ = {
 			isa = PBXGroup;
 			children = (
+				FD397666202A56C70045E462 /* API */,
+				FD397655202A56C60045E462 /* Common */,
+				FD39766A202A56C70045E462 /* Models */,
+				FD397663202A56C70045E462 /* Protocols */,
+				FD39765E202A56C70045E462 /* Providers */,
+				FD397661202A56C70045E462 /* UI */,
 				FD397619202914570045E462 /* GithubAPI.h */,
 				FD39761A202914570045E462 /* Info.plist */,
 			);
 			path = GithubAPI;
+			sourceTree = "<group>";
+		};
+		FD397655202A56C60045E462 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FD397656202A56C60045E462 /* APIError.swift */,
+				FD397657202A56C60045E462 /* RechabilityManager.swift */,
+				FD397658202A56C60045E462 /* SwiftyHelper.swift */,
+				FD397659202A56C60045E462 /* CollectionResponse.swift */,
+				FD39765A202A56C60045E462 /* ModelResponseSerializer.swift */,
+				FD39765B202A56C60045E462 /* VLError.swift */,
+				FD39765C202A56C60045E462 /* UserAdapter.swift */,
+				FD39765D202A56C60045E462 /* WebLinksHelper.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FD39765E202A56C70045E462 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				FD39765F202A56C70045E462 /* UserProvider.swift */,
+				FD397660202A56C70045E462 /* SearchUsersProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		FD397661202A56C70045E462 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FD397662202A56C70045E462 /* UIImageView+Github.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FD397663202A56C70045E462 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FD397664202A56C70045E462 /* BasicUser.swift */,
+				FD397665202A56C70045E462 /* JSONDecodableModel.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FD397666202A56C70045E462 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FD397669202A56C70045E462 /* API.swift */,
+				FD397667202A56C70045E462 /* API+User.swift */,
+				FD397668202A56C70045E462 /* API+Search.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FD39766A202A56C70045E462 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD39766B202A56C70045E462 /* GithubError.swift */,
+				FD39766C202A56C70045E462 /* User.swift */,
+				FD39766D202A56C70045E462 /* UserOverview.swift */,
+				FD39766E202A56C70045E462 /* SearchTerms.swift */,
+				FD39766F202A56C70045E462 /* GitHubAccount.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +332,7 @@
 					};
 					FD397616202914570045E462 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -394,6 +506,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD397671202A56C70045E462 /* RechabilityManager.swift in Sources */,
+				FD397678202A56C70045E462 /* UserProvider.swift in Sources */,
+				FD397672202A56C70045E462 /* SwiftyHelper.swift in Sources */,
+				FD397679202A56C70045E462 /* SearchUsersProvider.swift in Sources */,
+				FD39767E202A56C70045E462 /* API+Search.swift in Sources */,
+				FD39767C202A56C70045E462 /* JSONDecodableModel.swift in Sources */,
+				FD397684202A56C70045E462 /* GitHubAccount.swift in Sources */,
+				FD397673202A56C70045E462 /* CollectionResponse.swift in Sources */,
+				FD397670202A56C70045E462 /* APIError.swift in Sources */,
+				FD397680202A56C70045E462 /* GithubError.swift in Sources */,
+				FD397676202A56C70045E462 /* UserAdapter.swift in Sources */,
+				FD397682202A56C70045E462 /* UserOverview.swift in Sources */,
+				FD397675202A56C70045E462 /* VLError.swift in Sources */,
+				FD39767D202A56C70045E462 /* API+User.swift in Sources */,
+				FD39767A202A56C70045E462 /* UIImageView+Github.swift in Sources */,
+				FD397677202A56C70045E462 /* WebLinksHelper.swift in Sources */,
+				FD397681202A56C70045E462 /* User.swift in Sources */,
+				FD397674202A56C70045E462 /* ModelResponseSerializer.swift in Sources */,
+				FD397683202A56C70045E462 /* SearchTerms.swift in Sources */,
+				FD39767F202A56C70045E462 /* API.swift in Sources */,
+				FD39767B202A56C70045E462 /* BasicUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +671,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3293998C764DB9249BC1A945 /* Pods-GithubClient.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MYS8445P87;
@@ -554,6 +688,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0AE32EA94C8D2FEC3C9165CD /* Pods-GithubClient.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MYS8445P87;
@@ -570,6 +705,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5AD5509273B96A9133666B5E /* Pods-GithubAPI.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -584,6 +720,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ping.githubapi;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -595,6 +732,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5316AAF6FCC963C7EEDDEE08 /* Pods-GithubAPI.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

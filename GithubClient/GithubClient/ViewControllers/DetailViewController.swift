@@ -7,16 +7,28 @@
 //
 
 import UIKit
+import GithubAPI
 
-class DetailViewController: UIViewController {
+final class DetailViewController: UIViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var detailDescriptionLabel: UILabel?
+    
+    var user: User? {
+        didSet {
+            // Update the view.
+            configureView()
+        }
+    }
+    
+    deinit {
+        print("")
+    }
 
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail = detailItem {
+        if let user = user {
             if let label = detailDescriptionLabel {
-                label.text = detail.description
+                label.text = user.email ?? "not avalible"
             }
         }
     }

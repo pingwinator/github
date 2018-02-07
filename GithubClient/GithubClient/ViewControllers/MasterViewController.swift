@@ -222,7 +222,7 @@ final class MasterViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         //showDetail
         let user = groupedItems[indexPath.section][indexPath.row]
-        userProvider.loadDetails(for: user, onCompletion: { [weak self] user, status, error in
+        userProvider.loadDetails(for: user, allowCache: false, onCompletion: { [weak self] user, status, error in
             if let user = user, status {
                 self?.performSegue(withIdentifier: Segues.showDetail, sender: user)
             } else if let error = error {

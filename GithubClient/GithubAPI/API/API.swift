@@ -69,6 +69,5 @@ public final class GitHubApi {
         }
         //put breakpoint here for debug requests
         _ = dataRequest.progress
-        //        debugPrint(dataRequest)
     }
 }

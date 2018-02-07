@@ -41,13 +41,14 @@ public final class UserProvider {
     }
     
     @discardableResult
-    public func loadDetails(for user: UserOverview, onCompletion: @escaping UserResponse) -> URLRequestConvertible {
-        return userDetails(request: user, onCompletion: onCompletion)
+    public func loadDetails(for user: UserOverview, allowCache: Bool = true, onCompletion: @escaping UserResponse) -> URLRequestConvertible {
+        return userDetails(request: user, allowCache: allowCache, onCompletion: onCompletion)
     }
     
     @discardableResult
-    func userDetails(request: URLRequestConvertible, onCompletion: @escaping UserResponse) -> URLRequestConvertible {
-        if let url = request.urlRequest?.url?.absoluteString,
+    func userDetails(request: URLRequestConvertible, allowCache: Bool = true, onCompletion: @escaping UserResponse) -> URLRequestConvertible {
+        if allowCache,
+            let url = request.urlRequest?.url?.absoluteString,
             let cache = self.api.cache,
             let user = try? cache.object(ofType: User.self, forKey: url) {
             onCompletion(user, true, nil)
@@ -63,7 +64,7 @@ public final class UserProvider {
                     }
                 }
                 return response
-                }, onCompletion)
+            }, onCompletion)
         }
         
         return request

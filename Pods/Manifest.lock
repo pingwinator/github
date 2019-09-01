@@ -21,6 +21,17 @@ DEPENDENCIES:
   - SwiftyJSON
   - WebLinking (from `https://github.com/pingwinator/WebLinking.swift.git`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFDateHelper
+    - Alamofire
+    - AlamofireImage
+    - Cache
+    - Differ
+    - Simple-KeychainSwift
+    - SwiftLint
+    - SwiftyJSON
+
 EXTERNAL SOURCES:
   WebLinking:
     :git: https://github.com/pingwinator/WebLinking.swift.git
@@ -43,4 +54,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: ef8f7496d112578ad7301bf542a11065eb03f9a0
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.7.5

@@ -341,7 +341,6 @@
 				FD3975F9202914190045E462 /* Resources */,
 				FD397623202914580045E462 /* Embed Frameworks */,
 				DEC6E6DA554DD10BF48DE716 /* [CP] Embed Pods Frameworks */,
-				C322E343C9E388CA7A12F8E6 /* [CP] Copy Pods Resources */,
 				FD397624202916AD0045E462 /* SwiftLint */,
 			);
 			buildRules = (
@@ -363,7 +362,6 @@
 				FD397613202914570045E462 /* Frameworks */,
 				FD397614202914570045E462 /* Headers */,
 				FD397615202914570045E462 /* Resources */,
-				63ECD097A00ECD985416CC12 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -436,21 +434,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		63ECD097A00ECD985416CC12 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-GithubAPI/Pods-GithubAPI-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A3A08544F607BF7CBA51AE62 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -469,28 +452,13 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C322E343C9E388CA7A12F8E6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-GithubClient/Pods-GithubClient-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		DEC6E6DA554DD10BF48DE716 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-GithubClient/Pods-GithubClient-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-GithubClient/Pods-GithubClient-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFDateHelper/AFDateHelper.framework",
 				"${BUILT_PRODUCTS_DIR}/Differ/Differ.framework",
 				"${BUILT_PRODUCTS_DIR}/Simple-KeychainSwift/Simple_KeychainSwift.framework",
@@ -513,7 +481,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-GithubClient/Pods-GithubClient-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GithubClient/Pods-GithubClient-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EEABF2D229920D84C19BD8EB /* [CP] Check Pods Manifest.lock */ = {

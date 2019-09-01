@@ -8,7 +8,7 @@ PODS:
   - Simple-KeychainSwift (4.0.1)
   - SwiftLint (0.34.0)
   - SwiftyJSON (4.0.0)
-  - WebLinking (2.0.1)
+  - WebLinking (2.1.0)
 
 DEPENDENCIES:
   - AFDateHelper
@@ -19,7 +19,7 @@ DEPENDENCIES:
   - Simple-KeychainSwift
   - SwiftLint
   - SwiftyJSON
-  - WebLinking (from `https://github.com/pingwinator/WebLinking.swift.git`)
+  - "WebLinking (from `git@gitlab.com:pingwinator/WebLinking.swift.git`)"
 
 SPEC REPOS:
   https://cdn.cocoapods.org/:
@@ -36,15 +36,15 @@ EXTERNAL SOURCES:
   Cache:
     :git: "git@github.com:pingwinator/Cache.git"
   WebLinking:
-    :git: https://github.com/pingwinator/WebLinking.swift.git
+    :git: "git@gitlab.com:pingwinator/WebLinking.swift.git"
 
 CHECKOUT OPTIONS:
   Cache:
     :commit: c2f2163952ccdb7133680674267af7574acb7b80
     :git: "git@github.com:pingwinator/Cache.git"
   WebLinking:
-    :commit: 95dabb94a56cc7088fb8f0361feaa703dc75052a
-    :git: https://github.com/pingwinator/WebLinking.swift.git
+    :commit: dfc6031e3124e180f62864169d250ccedb8009e9
+    :git: "git@gitlab.com:pingwinator/WebLinking.swift.git"
 
 SPEC CHECKSUMS:
   AFDateHelper: b769c07d3d4784ee9a74633285304261bb27dc52
@@ -55,8 +55,8 @@ SPEC CHECKSUMS:
   Simple-KeychainSwift: b13dbd5a2ef596892dab650478d02a341a996bac
   SwiftLint: 79d48a17c6565dc286c37efb8322c7b450f95c67
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
-  WebLinking: b7507e9ccf2b0177dcc53cbdbaed787676fde745
+  WebLinking: 4f56c67433a97f78de3c9333d1ae720bda10f10c
 
-PODFILE CHECKSUM: 3347f8990f4504cef9c222b622e7f02d904ed520
+PODFILE CHECKSUM: 899e362d5b7a19d759cb81efc316d831ed393fda
 
 COCOAPODS: 1.7.5

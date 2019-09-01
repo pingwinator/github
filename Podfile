@@ -17,7 +17,7 @@ target 'GithubAPI' do
   pod 'SwiftyJSON'
 
   #remove git option after pr https://github.com/kylef/WebLinking.swift/pull/10 will be merged
-  pod 'WebLinking', :git => 'https://github.com/pingwinator/WebLinking.swift.git'
+  pod 'WebLinking', :git => 'git@gitlab.com:pingwinator/WebLinking.swift.git'
   pod 'Cache', :git => 'git@github.com:pingwinator/Cache.git'
   pod 'AFDateHelper'
 

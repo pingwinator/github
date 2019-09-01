@@ -20,7 +20,7 @@ final class MasterViewController: UITableViewController {
 
     var users: [UserOverview] = [] {
         didSet {
-            var groupedUsers = Dictionary(grouping: users, by: { String($0.login.first!).lowercased() })
+            let groupedUsers = Dictionary(grouping: users, by: { String($0.login.first!).lowercased() })
             sectionTitles = groupedUsers.keys.sorted()
             groupedItems = sectionTitles.map {
                 let user = groupedUsers[$0] ?? []
@@ -155,6 +155,7 @@ final class MasterViewController: UITableViewController {
             tableView.register(UINib(nibName: identifier, bundle: nil), forCellReuseIdentifier: identifier)
         }
         tableView.rowHeight = 50
+        tableView.tableFooterView = UIView()
     }
     
     fileprivate func showErrorMessage(_ message: String?) {

@@ -6,7 +6,7 @@ PODS:
   - Cache (4.1.2)
   - Differ (1.0.3)
   - Simple-KeychainSwift (4.0.1)
-  - SwiftLint (0.24.2)
+  - SwiftLint (0.34.0)
   - SwiftyJSON (4.0.0)
   - WebLinking (2.0.1)
 
@@ -22,6 +22,8 @@ DEPENDENCIES:
   - WebLinking (from `https://github.com/pingwinator/WebLinking.swift.git`)
 
 SPEC REPOS:
+  https://cdn.cocoapods.org/:
+    - SwiftLint
   https://github.com/cocoapods/specs.git:
     - AFDateHelper
     - Alamofire
@@ -29,7 +31,6 @@ SPEC REPOS:
     - Cache
     - Differ
     - Simple-KeychainSwift
-    - SwiftLint
     - SwiftyJSON
 
 EXTERNAL SOURCES:
@@ -48,7 +49,7 @@ SPEC CHECKSUMS:
   Cache: bd0233fc688b5e83a27bcd87807db7e6f23adcc5
   Differ: 0c220ac75542f5f17f91b1303b85bf07d871ecd7
   Simple-KeychainSwift: b13dbd5a2ef596892dab650478d02a341a996bac
-  SwiftLint: 2aa21b96c8d13396a051bc1cb659d2ce1e0075b0
+  SwiftLint: 79d48a17c6565dc286c37efb8322c7b450f95c67
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   WebLinking: b7507e9ccf2b0177dcc53cbdbaed787676fde745
 

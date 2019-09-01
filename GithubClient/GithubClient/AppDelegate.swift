@@ -16,12 +16,12 @@ final class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControll
 
     func setupLibs() {
         _ = GitHubApi.shared
-        if let gh = GitHubAccount.read() {
-            GitHubApi.shared.userAdapter = UserAdapter(account: gh)
+        if let github = GitHubAccount.read() {
+            GitHubApi.shared.userAdapter = UserAdapter(account: github)
         }
     }
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setupLibs()
         // Override point for customization after application launch.
         if let splitViewController = window!.rootViewController as? UISplitViewController,

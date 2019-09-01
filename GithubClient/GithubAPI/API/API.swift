@@ -13,12 +13,13 @@ import WebLinking
 import Cache
 
 internal typealias ServiceResponse = (JSON?, _ success: Bool, _ links: [Link], _ error: VLError?) -> Void
+public typealias UserStorage = Storage<User>
 
 public final class GitHubApi {
     public static let shared = GitHubApi()
     let sessionManager: SessionManager
     let baseURLString = "https://api.github.com"
-    let cache: Storage?
+    let cache: UserStorage?
     public var userAdapter: UserAdapter? = nil {
         didSet {
             sessionManager.adapter = userAdapter
@@ -36,7 +37,7 @@ public final class GitHubApi {
         sessionManager = Alamofire.SessionManager(configuration: configuration)
         let diskConfig = DiskConfig(name: "ApiCache")
         let memoryConfig = MemoryConfig(expiry: .never, countLimit: 10, totalCostLimit: 10)
-        cache = try? Storage(diskConfig: diskConfig, memoryConfig: memoryConfig)
+        cache = try? Storage(diskConfig: diskConfig, memoryConfig: memoryConfig, transformer: TransformerFactory.forCodable(ofType: User.self))
     }
     
     fileprivate func isReachable() -> Bool {
@@ -54,9 +55,9 @@ public final class GitHubApi {
             case .success(let value):
                 let links = response.response?.links ?? []
                 onCompletion(JSON(value), true, links, nil)
-            case .failure(let er):
+            case .failure(let error):
                 let responseData = response.data
-                var error = APIError<GithubError>(request: response.request, response: response.response, data: responseData, error: er)
+                var error = APIError<GithubError>(request: response.request, response: response.response, data: responseData, error: error)
                 if let data = response.data, !data.isEmpty {
                     error.errorModel = try? GithubError(json: JSON(data: data))
                 }

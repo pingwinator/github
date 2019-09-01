@@ -31,7 +31,7 @@ final class MasterViewController: UITableViewController {
     var sectionTitles: [String] = []
     var groupedItems: [SortedArray<UserOverview>] = [] {
         didSet {
-            let animation: UITableViewRowAnimation = .top
+            let animation: UITableView.RowAnimation = .top
             tableView.animateRowAndSectionChanges(oldData: oldValue, newData: groupedItems, rowDeletionAnimation: animation, rowInsertionAnimation: animation, sectionDeletionAnimation: animation, sectionInsertionAnimation: animation)
         }
     }
@@ -121,7 +121,7 @@ final class MasterViewController: UITableViewController {
         alertController.addTextField { [weak self] textField in
             textField.placeholder = "Login"
 
-            self?.loginTextFildObserver = NotificationCenter.default.addObserver(forName: NSNotification.Name.UITextFieldTextDidChange, object: textField, queue: OperationQueue.main) { _ in
+            self?.loginTextFildObserver = NotificationCenter.default.addObserver(forName: UITextField.textDidChangeNotification, object: textField, queue: OperationQueue.main) { _ in
                 loginAction.isEnabled = textField.text != ""
             }
         }
@@ -139,8 +139,8 @@ final class MasterViewController: UITableViewController {
     // MARK: - Private
     
     fileprivate func setupUser() {
-        if let gh = GitHubAccount.read() {
-            GitHubApi.shared.userAdapter = UserAdapter(account: gh)
+        if let github = GitHubAccount.read() {
+            GitHubApi.shared.userAdapter = UserAdapter(account: github)
             loadFirstPage()
             navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logout(_:)))
             navigationItem.rightBarButtonItem = UIBarButtonItem(title: "+10", style: .plain, target: self, action: #selector(loadNextPage(_:)))
@@ -160,7 +160,7 @@ final class MasterViewController: UITableViewController {
     fileprivate func showErrorMessage(_ message: String?) {
 
         let alert = UIAlertController(title: "", message: message ?? NSLocalizedString("something.wrong", comment: ""), preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: { (_) -> Void in
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: { (_) -> Void in
 
         }))
         present(alert, animated: true, completion: nil)

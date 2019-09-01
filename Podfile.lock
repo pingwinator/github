@@ -7,7 +7,7 @@ PODS:
   - Differ (1.0.3)
   - Simple-KeychainSwift (4.0.1)
   - SwiftLint (0.34.0)
-  - SwiftyJSON (4.0.0)
+  - SwiftyJSON (5.0.0)
   - WebLinking (2.1.0)
 
 DEPENDENCIES:
@@ -27,10 +27,10 @@ SPEC REPOS:
     - Alamofire
     - AlamofireImage
     - SwiftLint
+    - SwiftyJSON
   https://github.com/cocoapods/specs.git:
     - Differ
     - Simple-KeychainSwift
-    - SwiftyJSON
 
 EXTERNAL SOURCES:
   Cache:
@@ -54,7 +54,7 @@ SPEC CHECKSUMS:
   Differ: 0c220ac75542f5f17f91b1303b85bf07d871ecd7
   Simple-KeychainSwift: b13dbd5a2ef596892dab650478d02a341a996bac
   SwiftLint: 79d48a17c6565dc286c37efb8322c7b450f95c67
-  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   WebLinking: 4f56c67433a97f78de3c9333d1ae720bda10f10c
 
 PODFILE CHECKSUM: 899e362d5b7a19d759cb81efc316d831ed393fda

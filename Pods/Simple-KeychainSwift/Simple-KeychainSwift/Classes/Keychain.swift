@@ -11,6 +11,8 @@ import Foundation
 // MARK: - *** Public methods ***
 public class Keychain {
     
+    public static var allowBackgroundAccess = false
+    
     @discardableResult public class func set<T: TypeSafeKeychainValue>(_ value: T?, forKey key: String) -> Bool {
         guard let value = value else {
             removeValue(forKey: key)
@@ -140,7 +142,11 @@ fileprivate extension Keychain {
         
         let serviceName = Bundle(for: self).infoDictionary![kCFBundleIdentifierKey as String] as! String
         
-        return [kSecClass as String : kSecClassGenericPassword, kSecAttrService as String : serviceName]
+        var dict: [String: Any] = [kSecClass as String : kSecClassGenericPassword, kSecAttrService as String : serviceName]
+        if allowBackgroundAccess {
+            dict[kSecAttrAccessible as String] = kSecAttrAccessibleAfterFirstUnlock
+        }
+        return dict
     }
 }
 
@@ -165,7 +171,7 @@ extension Int: TypeSafeKeychainValue {
         return Data(bytes: &value, count: MemoryLayout.size(ofValue: value))
     }
     public static func value(data: Data) -> Int? {
-        return data.withUnsafeBytes { $0.pointee }
+        return data.withUnsafeBytes { $0.load(as: Int.self) }
     }
 }
 
@@ -175,7 +181,7 @@ extension Bool: TypeSafeKeychainValue {
         return Data(bytes: &value, count: MemoryLayout.size(ofValue: value))
     }
     public static func value(data: Data) -> Bool? {
-        return data.withUnsafeBytes { $0.pointee }
+        return data.withUnsafeBytes { $0.load(as: Bool.self) }
     }
 }
 

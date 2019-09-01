@@ -1540,6 +1540,37 @@
 			};
 			name = Release;
 		};
+		0CED7E2CC1152A0867108FA1E70CBBB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA655708B150FAD6EC78E8D779977D8A /* Simple-KeychainSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Simple-KeychainSwift/Simple-KeychainSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Simple-KeychainSwift/Simple-KeychainSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Simple-KeychainSwift/Simple-KeychainSwift.modulemap";
+				PRODUCT_MODULE_NAME = Simple_KeychainSwift;
+				PRODUCT_NAME = Simple_KeychainSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		141A11F3B1F5EE9BCF9378B5A11747E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 09A2109BF2109AE9D85AD760EF6B9506 /* Alamofire.xcconfig */;
@@ -1939,38 +1970,6 @@
 			};
 			name = Release;
 		};
-		AF965868FBD47DC9C9486FE9CF6715AD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA655708B150FAD6EC78E8D779977D8A /* Simple-KeychainSwift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Simple-KeychainSwift/Simple-KeychainSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Simple-KeychainSwift/Simple-KeychainSwift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Simple-KeychainSwift/Simple-KeychainSwift.modulemap";
-				PRODUCT_MODULE_NAME = Simple_KeychainSwift;
-				PRODUCT_NAME = Simple_KeychainSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2063,6 +2062,38 @@
 			};
 			name = Release;
 		};
+		BA5839645D59C3F89619F1DDFB1F580F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA655708B150FAD6EC78E8D779977D8A /* Simple-KeychainSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Simple-KeychainSwift/Simple-KeychainSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Simple-KeychainSwift/Simple-KeychainSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Simple-KeychainSwift/Simple-KeychainSwift.modulemap";
+				PRODUCT_MODULE_NAME = Simple_KeychainSwift;
+				PRODUCT_NAME = Simple_KeychainSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		C9EDA5050E946C2FB58797B389EC22F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 077246164B22BDAE0A394D6CB80DD60E /* WebLinking.xcconfig */;
@@ -2139,37 +2170,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		E011285F733452307D9061F6339EE34C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA655708B150FAD6EC78E8D779977D8A /* Simple-KeychainSwift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Simple-KeychainSwift/Simple-KeychainSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Simple-KeychainSwift/Simple-KeychainSwift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Simple-KeychainSwift/Simple-KeychainSwift.modulemap";
-				PRODUCT_MODULE_NAME = Simple_KeychainSwift;
-				PRODUCT_NAME = Simple_KeychainSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -2383,8 +2383,8 @@
 		C37BB124F5D4DA806ED52960E3923CD0 /* Build configuration list for PBXNativeTarget "Simple-KeychainSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E011285F733452307D9061F6339EE34C /* Debug */,
-				AF965868FBD47DC9C9486FE9CF6715AD /* Release */,
+				0CED7E2CC1152A0867108FA1E70CBBB9 /* Debug */,
+				BA5839645D59C3F89619F1DDFB1F580F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

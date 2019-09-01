@@ -139,8 +139,8 @@ final class MasterViewController: UITableViewController {
     // MARK: - Private
     
     fileprivate func setupUser() {
-        if let gh = GitHubAccount.read() {
-            GitHubApi.shared.userAdapter = UserAdapter(account: gh)
+        if let github = GitHubAccount.read() {
+            GitHubApi.shared.userAdapter = UserAdapter(account: github)
             loadFirstPage()
             navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logout(_:)))
             navigationItem.rightBarButtonItem = UIBarButtonItem(title: "+10", style: .plain, target: self, action: #selector(loadNextPage(_:)))

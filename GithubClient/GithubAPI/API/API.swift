@@ -15,7 +15,6 @@ import Cache
 internal typealias ServiceResponse = (JSON?, _ success: Bool, _ links: [Link], _ error: VLError?) -> Void
 public typealias UserStorage = Storage<User>
 
-
 public final class GitHubApi {
     public static let shared = GitHubApi()
     let sessionManager: SessionManager
@@ -56,9 +55,9 @@ public final class GitHubApi {
             case .success(let value):
                 let links = response.response?.links ?? []
                 onCompletion(JSON(value), true, links, nil)
-            case .failure(let er):
+            case .failure(let error):
                 let responseData = response.data
-                var error = APIError<GithubError>(request: response.request, response: response.response, data: responseData, error: er)
+                var error = APIError<GithubError>(request: response.request, response: response.response, data: responseData, error: error)
                 if let data = response.data, !data.isEmpty {
                     error.errorModel = try? GithubError(json: JSON(data: data))
                 }

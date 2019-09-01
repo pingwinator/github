@@ -16,8 +16,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControll
 
     func setupLibs() {
         _ = GitHubApi.shared
-        if let gh = GitHubAccount.read() {
-            GitHubApi.shared.userAdapter = UserAdapter(account: gh)
+        if let github = GitHubAccount.read() {
+            GitHubApi.shared.userAdapter = UserAdapter(account: github)
         }
     }
 

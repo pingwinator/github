@@ -26,7 +26,7 @@ public final class UserProvider {
         let notLoadedUsers = users.filter { (user) -> Bool in
             if let url = user.urlRequest?.url?.absoluteString,
                 let cache = self.api.cache,
-                let exist = try? cache.existsObject(ofType: User.self, forKey: url),
+                let exist = try? cache.existsObject(forKey: url),
                 exist {
                 return false
             } else {
@@ -50,7 +50,7 @@ public final class UserProvider {
         if allowCache,
             let url = request.urlRequest?.url?.absoluteString,
             let cache = self.api.cache,
-            let user = try? cache.object(ofType: User.self, forKey: url) {
+            let user = try? cache.object(forKey: url) {
             onCompletion(user, true, nil)
             return request
         }

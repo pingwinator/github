@@ -4,7 +4,7 @@ PODS:
   - AlamofireImage (3.5.2):
     - Alamofire (~> 4.8)
   - Cache (5.2.0)
-  - Differ (1.0.3)
+  - Differ (1.4.3)
   - Simple-KeychainSwift (4.1.0)
   - SwiftLint (0.34.0)
   - SwiftyJSON (5.0.0)
@@ -26,11 +26,10 @@ SPEC REPOS:
     - AFDateHelper
     - Alamofire
     - AlamofireImage
+    - Differ
     - Simple-KeychainSwift
     - SwiftLint
     - SwiftyJSON
-  https://github.com/cocoapods/specs.git:
-    - Differ
 
 EXTERNAL SOURCES:
   Cache:
@@ -51,7 +50,7 @@ SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
   Cache: 27234a6676893d78b24af9ef8d0fc5bd6e832271
-  Differ: 0c220ac75542f5f17f91b1303b85bf07d871ecd7
+  Differ: 6c7477d6187e8c36d02ec342a3c321061b85a0ea
   Simple-KeychainSwift: 6f5d5009c2a8d1c2c326dfdd4890d32e8804b293
   SwiftLint: 79d48a17c6565dc286c37efb8322c7b450f95c67
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7

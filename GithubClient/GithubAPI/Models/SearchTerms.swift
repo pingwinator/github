@@ -53,8 +53,9 @@ extension SearchTerms: ExpressibleByStringLiteral {
 }
 
 extension SearchTerms: Hashable {
-    public var hashValue: Int {
-        return self.rawValue.hashValue
+    
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(self.rawValue)
     }
     
     public static func == (lhs: SearchTerms, rhs: SearchTerms) -> Bool {
@@ -69,12 +70,12 @@ extension SearchTerms: CustomStringConvertible {
 }
 
 public extension SearchTerms {
-    public struct Languages {
+    struct Languages {
         public static let java = "java"
         public static let swift = "swift"
     }
     
-    public struct UserTypes {
+    struct UserTypes {
         public static let user = "user"
         public static let organization = "org"
     }
@@ -82,7 +83,7 @@ public extension SearchTerms {
 
 public extension SearchTerms {
     ///predefined query for java language
-    public static let javaLang = SearchTerms.language(Languages.java)
+    static let javaLang = SearchTerms.language(Languages.java)
     ///predefines query for only users responce
-    public static let user = SearchTerms.type(UserTypes.user)
+    static let user = SearchTerms.type(UserTypes.user)
 }

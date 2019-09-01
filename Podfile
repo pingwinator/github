@@ -1,6 +1,9 @@
-# Uncomment the next line to define a global platform for your project
+# Disable sending stats
+ENV['COCOAPODS_DISABLE_STATS'] = 'true'
+
 platform :ios, '10.0'
 
+source 'https://cdn.cocoapods.org/'
 # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
 use_frameworks!
 # ignore all warnings from all pods
